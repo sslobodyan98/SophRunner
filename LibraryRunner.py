@@ -65,7 +65,8 @@ def save_login_session(playwright):
 
 def check_and_place_hold(playwright, book_url):
     browser = playwright.chromium.launch(headless=True)
-    context = browser.new_context(storage_state=STATE_FILE)
+    context = browser.new_context(storage_state=STATE_FILE,
+                                     user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36")
     page = context.new_page()
 
     print(f"🌐 Navigating to book page: {book_url}")
