@@ -53,7 +53,7 @@ def save_login_session(playwright):
     page = context.new_page()
 
     print("🔐 Launching login page...")
-    page.goto(f"{SUPPER_SECRET_URL}") #make github secret
+    page.goto(f"{SUPER_SECRET_URL}") #make github secret
 
     print("🕹️ Please log into your account manually in the browser.")
     #input("✅ Press ENTER after you're logged in and see your home page...")
