@@ -56,7 +56,7 @@ def save_login_session(playwright):
     page.goto(f"{SUPPER_SECRET_URL}") #make github secret
 
     print("🕹️ Please log into your account manually in the browser.")
-    input("✅ Press ENTER after you're logged in and see your home page...")
+    #input("✅ Press ENTER after you're logged in and see your home page...")
 
     print("💾 Saving login session to state.json...")
     context.storage_state(path=STATE_FILE)
