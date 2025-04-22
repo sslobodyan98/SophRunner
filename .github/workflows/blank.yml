@@ -30,7 +30,7 @@ jobs:
           openssl enc -d -aes-256-cbc -pbkdf2 -in state.enc -out state.json -pass pass:${{ secrets.STATE_FILE_PASSWORD }}
 
       - name: Run Libby checker
-        run: python script.py
+        run: python LibraryRunner.py
         env:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PWD }}
