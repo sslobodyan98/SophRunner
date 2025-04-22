@@ -139,7 +139,8 @@ def main():
     try:
         with sync_playwright() as p:
             if not os.path.exists(STATE_FILE):
-                save_login_session(p)
+                print(f"❌ {STATE_FILE} not found. Cannot proceed without authentication state.")
+                return
 
             process_all_books(p)
     except Exception as e:
