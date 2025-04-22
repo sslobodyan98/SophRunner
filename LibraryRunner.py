@@ -64,7 +64,7 @@ def save_login_session(playwright):
     browser.close()
 
 def check_and_place_hold(playwright, book_url):
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(storage_state=STATE_FILE)
     page = context.new_page()
 
