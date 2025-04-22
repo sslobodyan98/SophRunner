@@ -36,3 +36,4 @@ jobs:
           EMAIL_PWD: ${{ secrets.EMAIL_PWD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
           BOOK_URLS: ${{ secrets.BOOK_URLS }}
+          SUPER_SECRET_URL: ${{ secrets.SUPER_SECRET_URL }}
