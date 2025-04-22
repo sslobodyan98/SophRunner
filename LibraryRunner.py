@@ -13,7 +13,7 @@ BOOK_URLS = json.loads(os.environ["BOOK_URLS"])
 EMAIL_SENDER = os.environ["EMAIL_SENDER"]
 EMAIL_PASSWORD = os.environ["EMAIL_PWD"]
 EMAIL_RECEIVER = os.environ["EMAIL_RECEIVER"]
-SUPPER_SECRET_URL = os.environ["SUPPER_SECRET_URL"]
+SUPER_SECRET_URL = os.environ["SUPER_SECRET_URL"]
 
 def send_email(subject, body):
     """Send an email with the specified subject and body."""
