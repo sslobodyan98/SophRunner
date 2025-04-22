@@ -33,6 +33,6 @@ jobs:
         run: python LibraryRunner.py
         env:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PWD }}
+          EMAIL_PWD: ${{ secrets.EMAIL_PWD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
           BOOK_URLS: ${{ secrets.BOOK_URLS }}
