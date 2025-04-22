@@ -28,12 +28,6 @@ jobs:
       - name: Decrypt state file
         run: |
           openssl enc -d -aes-256-cbc -pbkdf2 -in state.enc -out state.json -pass pass:${{ secrets.STATE_FILE_PASSWORD }}
-      
-      - name: Check state.json content
-        run: |
-          cat state.json | head -n 5
-          file state.json
-          jq . < state.json
           
       - name: Run Libby checker
         run: xvfb-run python LibraryRunner.py
